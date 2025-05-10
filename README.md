@@ -40,6 +40,6 @@
 
 ## Credits
 
-[Jewelry (RPG Series)](https://modrinth.com/mod/jewelry) by [ZsoltMolnarrr]([ZsoltMolnarrr](https://modrinth.com/user/ZsoltMolnarrr)) for visual and design inspiration for this mod’s item concepts.
+[Jewelry (RPG Series)](https://modrinth.com/mod/jewelry) by [ZsoltMolnarrr](https://modrinth.com/user/ZsoltMolnarrr) for visual and design inspiration for this mod’s item concepts.
 
 > If you extend or fork this mod, please consider keeping credits intact where applicable.
