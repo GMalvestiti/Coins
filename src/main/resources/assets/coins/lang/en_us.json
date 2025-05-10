@@ -1,0 +1,12 @@
+{
+  "itemgroup.coins": "Coins",
+
+  "item.coins.gold_coin": "Gold Coin",
+  "item.coins.iron_coin": "Iron Coin",
+  "item.coins.copper_coin": "Copper Coin",
+
+  "tag.item.coins.coins": "Coins",
+  "tag.item.coins.gold_coin": "Gold Coin",
+  "tag.item.coins.iron_coin": "Iron Coin",
+  "tag.item.coins.copper_coin": "Copper Coin"
+}
