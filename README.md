@@ -24,7 +24,7 @@
 
 ## Installation
 
-1. Drop the Coins `.jar` into your `mods` folder for both **client** and **server.
+1. Drop the Coins `.jar` into your `mods` folder for both **client** and **server**.
 2. Start the server or load into a world — the mod is active immediately.
 
 ## Tags
