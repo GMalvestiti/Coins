@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "net.riser876.coins.Coins"
+    ],
+    "fabric-datagen": [
+      "net.riser876.coins.datagen.CoinsDataGenerator"
     ]
   },
   "depends": {

@@ -1,0 +1,10 @@
+{
+  "item.coins.copper_coin": "Moeda de Cobre",
+  "item.coins.gold_coin": "Moeda de Ouro",
+  "item.coins.iron_coin": "Moeda de Ferro",
+  "itemgroup.coins": "Moedas",
+  "tag.item.coins.coins": "Moedas",
+  "tag.item.coins.copper_coin": "Moeda de Cobre",
+  "tag.item.coins.gold_coin": "Moeda de Ouro",
+  "tag.item.coins.iron_coin": "Moeda de Ferro"
+}

@@ -1,7 +1,7 @@
 package net.riser876.coins;
 
 import net.fabricmc.api.ModInitializer;
-import net.riser876.coins.item.CoinItems;
+import net.riser876.coins.item.CoinsItem;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ public class Coins implements ModInitializer {
     @Override
     public void onInitialize() {
         try {
-            CoinItems.init();
+            CoinsItem.init();
             Coins.LOGGER.info("[Coins] Mod loaded.");
         } catch (Exception e) {
             Coins.LOGGER.error("[Coins] Failed to load.", e);
