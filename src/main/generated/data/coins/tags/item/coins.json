@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#coins:gold_coin",
+      "required": false
+    },
+    {
+      "id": "#coins:iron_coin",
+      "required": false
+    },
+    {
+      "id": "#coins:copper_coin",
+      "required": false
+    }
+  ]
+}

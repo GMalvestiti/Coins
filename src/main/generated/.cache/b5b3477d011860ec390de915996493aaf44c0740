@@ -1,0 +1,15 @@
+// 1.21	2025-07-27T20:10:14.2742781	Coins/Recipes
+1d26b950f27693f9faa2449585132f604ed2df24 data\coins\advancement\recipes\misc\iron_coin_from_gold_coin.json
+ddce29271353f70f4b7a0e27da3b5b6905a2a810 data\coins\advancement\recipes\misc\copper_coin.json
+1001917c9a58762f3114bab3485c06af27d20a50 data\coins\recipe\gold_coin.json
+f13c579d8dcc17d6b754e6938d206e3cdebde4f9 data\coins\recipe\gold_coin_from_iron_coin.json
+6e60814329dcdd9eb0d1f9f50ff61f98e89c27a9 data\coins\advancement\recipes\misc\iron_coin_from_copper_coin.json
+fd831ad508452625c36345a2de17f748ff2a00e9 data\coins\advancement\recipes\misc\copper_coin_from_iron_coin.json
+86ef88be07495d71d51c8e7e865e0280af517164 data\coins\recipe\copper_coin_from_iron_coin.json
+e03c2cefed795b52126a760a7313a0dbaa9957ce data\coins\advancement\recipes\misc\gold_coin.json
+23f33ead63c67bf3de3bafa82cb31077aac8202e data\coins\recipe\iron_coin_from_copper_coin.json
+6f1875905dda912a3bd7e6b3fac5c4253af0c0ee data\coins\advancement\recipes\misc\iron_coin.json
+a7efa5b7b9a1eb583cca9b41099f51ef5f62ba0d data\coins\recipe\copper_coin.json
+133ab7c889ad55a242aa9bf640e1a773be34c335 data\coins\recipe\iron_coin_from_gold_coin.json
+fa0251dd573316173ea80e5d452b45202987c801 data\coins\recipe\iron_coin.json
+6efbdb56bde9ce88808c25d96467894df0bc4c2d data\coins\advancement\recipes\misc\gold_coin_from_iron_coin.json
