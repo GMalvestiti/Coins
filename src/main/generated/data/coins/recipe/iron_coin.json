@@ -8,8 +8,9 @@
     }
   },
   "pattern": [
-    "ii",
-    "ii"
+    " i ",
+    "i i",
+    " i "
   ],
   "result": {
     "count": 4,
