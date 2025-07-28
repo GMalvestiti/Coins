@@ -41,12 +41,12 @@ public class CoinsRecipeProvider extends FabricRecipeProvider {
 
     private static void offerCoinFromIngot(RecipeExporter recipeExporter, ItemConvertible item, TagKey<Item> tag, String group) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, item, 4)
-                .pattern("ii")
-                .pattern("ii")
+                .pattern(" i ")
+                .pattern("i i")
+                .pattern(" i ")
                 .input('i', tag)
                 .group(group)
                 .criterion("has_ingot", conditionsFromTag(tag))
-                .criterion("has_coin", conditionsFromTag(CoinsTag.COINS))
                 .offerTo(recipeExporter);
     }
 
