@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "copper_coin",
   "key": {
-    "i": {
-      "tag": "c:ingots/copper"
-    }
+    "i": "#coins:copper_coin"
   },
   "pattern": [
     "ii",

@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:ingots/iron"
+            "items": "#coins:iron_coin"
           }
         ]
       },

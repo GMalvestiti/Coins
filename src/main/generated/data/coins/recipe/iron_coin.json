@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "iron_coin",
   "key": {
-    "i": {
-      "tag": "c:ingots/iron"
-    }
+    "i": "#coins:iron_coin"
   },
   "pattern": [
     "ii",

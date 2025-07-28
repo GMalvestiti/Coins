@@ -8,9 +8,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.riser876.coins.Coins;
+
+import java.util.function.Function;
 
 public class CoinsItem {
 
@@ -34,15 +37,17 @@ public class CoinsItem {
         });
     }
 
-    private static RegistryKey<Item> keyOf(String itemId) {
-        return RegistryKey.of(Registries.ITEM.getKey(), Identifier.of(Coins.MOD_ID, itemId));
+    public static Item register(String identifier) {
+        return register(identifier, Item::new, new Item.Settings());
     }
 
-    private static Item register(String itemId) {
-        return register(keyOf(itemId), new Item.Settings());
-    }
+    public static Item register(String identifier, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Coins.MOD_ID, identifier));
 
-    private static Item register(RegistryKey<Item> itemKey, Item.Settings settings) {
-        return Registry.register(Registries.ITEM, itemKey, new Item(settings));
+        Item item = itemFactory.apply(settings.registryKey(itemKey));
+
+        Registry.register(Registries.ITEM, itemKey, item);
+
+        return item;
     }
 }

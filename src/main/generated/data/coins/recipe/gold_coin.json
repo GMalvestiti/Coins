@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "gold_coin",
   "key": {
-    "i": {
-      "tag": "c:ingots/gold"
-    }
+    "i": "#coins:gold_coin"
   },
   "pattern": [
     "ii",
