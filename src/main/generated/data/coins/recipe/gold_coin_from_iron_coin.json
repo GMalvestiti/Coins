@@ -3,33 +3,15 @@
   "category": "misc",
   "group": "gold_coin",
   "ingredients": [
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    }
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin",
+    "#coins:iron_coin"
   ],
   "result": {
     "count": 1,
