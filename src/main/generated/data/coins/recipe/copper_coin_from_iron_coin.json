@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "copper_coin",
   "ingredients": [
-    {
-      "tag": "coins:iron_coin"
-    }
+    "#coins:iron_coin"
   ],
   "result": {
     "count": 9,

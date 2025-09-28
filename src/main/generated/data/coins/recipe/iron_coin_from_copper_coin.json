@@ -3,33 +3,15 @@
   "category": "misc",
   "group": "iron_coin",
   "ingredients": [
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    },
-    {
-      "tag": "coins:copper_coin"
-    }
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin",
+    "#coins:copper_coin"
   ],
   "result": {
     "count": 1,
