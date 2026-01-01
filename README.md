@@ -8,17 +8,19 @@
 
 ## Recipes
 
-From version **3.0.0** onwards, the mod **removes** the default crafting recipes for coins, so server owners and modpack creators need to implement their own custom recipes.
+From version **3.0.0** onward, the mod **no longer includes** default coin crafting recipes. Server owners and modpack creators must provide their own.
 
-Why? Because creating new crafting recipes for coins is easier and more straightforward than removing existing ones. This change allows for greater flexibility and customization in how coins are obtained in your world.
+This change improves flexibility, as adding custom recipes is **easier and more straightforward** than removing predefined ones, allowing full control over how coins are obtained.
 
 Ways to implement custom recipes:
 
 - [Vanilla Data Packs](https://minecraft.wiki/w/Data_pack)
-  - Example Recipes Data Pack: [RPG Coins Example Recipes Data Pack](https://www.curseforge.com/minecraft/worlds/rpg-coins-recipes-datapack)
+    - Example Recipes Data Pack: [Here](https://www.curseforge.com/minecraft/worlds/rpg-coins-recipes-datapack)
 - [Crafting Tweaks](https://modrinth.com/mod/crafting-tweaks)
 - [KubeJS](https://modrinth.com/mod/kubejs)
 - Other recipe management tools.
+
+> Recipe remover example data pack for versions prior to 3.0.0: [Here](https://modrinth.com/datapack/rpgcoins/version/ETvDitgh)
 
 ## Compatibility
 
