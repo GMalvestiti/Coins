@@ -15,7 +15,7 @@ This change improves flexibility, as adding custom recipes is **easier and more 
 Ways to implement custom recipes:
 
 - [Vanilla Data Packs](https://minecraft.wiki/w/Data_pack)
-    - Example Recipes Data Pack: [Here](https://www.curseforge.com/minecraft/worlds/rpg-coins-recipes-datapack)
+    - Example recipes data pack: [Here](https://modrinth.com/datapack/rpgcoins/version/LXf815bS)
 - [Crafting Tweaks](https://modrinth.com/mod/crafting-tweaks)
 - [KubeJS](https://modrinth.com/mod/kubejs)
 - Other recipe management tools.
@@ -24,13 +24,13 @@ Ways to implement custom recipes:
 
 ## Compatibility
 
-- **Required:** 
-  - [Fabric API](https://modrinth.com/mod/fabric-api)
-- **Made to be played with:** 
-  - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
+- **Required:**
+    - [Fabric API](https://modrinth.com/mod/fabric-api)
+- **Made to be played with:**
+    - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
 - **Guaranteed to work with:**
-  - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
-  - [Universal Shops](https://modrinth.com/mod/universal-shops)
+    - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
+    - [Universal Shops](https://modrinth.com/mod/universal-shops)
 
 ## Installation
 
