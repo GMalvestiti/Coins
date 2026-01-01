@@ -5,12 +5,20 @@
 ## Features
 
 - Adds **Gold Coin**, **Iron Coin**, and **Copper Coin** items.
-- Includes crafting recipes for:
-  - Creating coins from ingots.
-  - Conversion between coin items (e.g. 9 copper → 1 iron, 9 iron → 1 gold).
-- All recipes are customizable via datapacks.
 
-> By default, conversion back into ingots or ores is not included.
+## Recipes
+
+From version **3.0.0** onwards, the mod **removes** the default crafting recipes for coins, so server owners and modpack creators need to implement their own custom recipes.
+
+Why? Because creating new crafting recipes for coins is easier and more straightforward than removing existing ones. This change allows for greater flexibility and customization in how coins are obtained in your world.
+
+Ways to implement custom recipes:
+
+- [Vanilla Data Packs](https://minecraft.wiki/w/Data_pack)
+  - Example Recipes Data Pack: [RPG Coins Example Recipes Data Pack](https://www.curseforge.com/minecraft/worlds/rpg-coins-recipes-datapack)
+- [Crafting Tweaks](https://modrinth.com/mod/crafting-tweaks)
+- [KubeJS](https://modrinth.com/mod/kubejs)
+- Other recipe management tools.
 
 ## Compatibility
 
