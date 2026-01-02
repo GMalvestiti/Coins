@@ -5,22 +5,32 @@
 ## Features
 
 - Adds **Gold Coin**, **Iron Coin**, and **Copper Coin** items.
-- Includes crafting recipes for:
-  - Creating coins from ingots.
-  - Conversion between coin items (e.g. 9 copper → 1 iron, 9 iron → 1 gold).
-- All recipes are customizable via datapacks.
 
-> By default, conversion back into ingots or ores is not included.
+## Recipes
+
+From version **3.0.0** onward, the mod **no longer includes** default coin crafting recipes. Server owners and modpack creators must provide their own.
+
+This change improves flexibility, as adding custom recipes is **easier and more straightforward** than removing predefined ones, allowing full control over how coins are obtained.
+
+Ways to implement custom recipes:
+
+- [Vanilla Data Packs](https://minecraft.wiki/w/Data_pack)
+    - Example recipes data pack: [Here](https://modrinth.com/datapack/rpgcoins/version/LXf815bS)
+- [Crafting Tweaks](https://modrinth.com/mod/crafting-tweaks)
+- [KubeJS](https://modrinth.com/mod/kubejs)
+- Other recipe management tools.
+
+> Recipe remover example data pack for versions prior to 3.0.0: [Here](https://modrinth.com/datapack/rpgcoins/version/ETvDitgh)
 
 ## Compatibility
 
-- **Required:** 
-  - [Fabric API](https://modrinth.com/mod/fabric-api)
-- **Made to be played with:** 
-  - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
+- **Required:**
+    - [Fabric API](https://modrinth.com/mod/fabric-api)
+- **Made to be played with:**
+    - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
 - **Guaranteed to work with:**
-  - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
-  - [Universal Shops](https://modrinth.com/mod/universal-shops)
+    - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
+    - [Universal Shops](https://modrinth.com/mod/universal-shops)
 
 ## Installation
 

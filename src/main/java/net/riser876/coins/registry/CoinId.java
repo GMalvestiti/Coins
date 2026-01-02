@@ -1,6 +1,6 @@
-package net.riser876.coins.item;
+package net.riser876.coins.registry;
 
-public enum CoinsId {
+public enum CoinId {
 
     GOLD_COIN("gold_coin"),
     IRON_COIN("iron_coin"),
@@ -8,7 +8,7 @@ public enum CoinsId {
 
     private final String id;
 
-    CoinsId(String id) {
+    CoinId(String id) {
         this.id = id;
     }
 
