@@ -1,53 +1,43 @@
 package net.riser876.coins.registry;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.riser876.coins.util.CoinsGlobals;
 
-import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class CoinsItem {
 
-    public static final ResourceKey<CreativeModeTab> COINS_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(CoinsGlobals.MOD_ID, "item_group"));
-    public static final CreativeModeTab COINS_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(CoinsItem.GOLD_COIN))
-            .title(Component.translatable("itemgroup.coins"))
-            .build();
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CoinsGlobals.MOD_ID);
 
-    public static final Item GOLD_COIN = register(CoinId.GOLD_COIN.getId());
-    public static final Item IRON_COIN = register(CoinId.IRON_COIN.getId());
-    public static final Item COPPER_COIN = register(CoinId.COPPER_COIN.getId());
+    public static final DeferredItem<Item> GOLD_COIN = register(CoinId.GOLD_COIN.getId());
+    public static final DeferredItem<Item> IRON_COIN = register(CoinId.IRON_COIN.getId());
+    public static final DeferredItem<Item> COPPER_COIN = register(CoinId.COPPER_COIN.getId());
 
-    public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, COINS_ITEM_GROUP_KEY, COINS_ITEM_GROUP);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CoinsGlobals.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(COINS_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.accept(CoinsItem.GOLD_COIN);
-            itemGroup.accept(CoinsItem.IRON_COIN);
-            itemGroup.accept(CoinsItem.COPPER_COIN);
-        });
+    public static final Supplier<CreativeModeTab> COINS_TAB = CREATIVE_MODE_TABS.register(CoinsGlobals.MOD_ID, () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + CoinsGlobals.MOD_ID))
+            .icon(() -> new ItemStack(CoinsItem.GOLD_COIN.get()))
+            .displayItems((params, output) -> {
+                output.accept(CoinsItem.GOLD_COIN.get());
+                output.accept(CoinsItem.IRON_COIN.get());
+                output.accept(CoinsItem.COPPER_COIN.get());
+            }).build()
+    );
+
+    public static void init(IEventBus modEventBus) {
+        ITEMS.register(modEventBus);
+        CREATIVE_MODE_TABS.register(modEventBus);
     }
 
-    public static Item register(String identifier) {
-        return register(identifier, Item::new, new Item.Properties());
-    }
-
-    public static Item register(String identifier, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(CoinsGlobals.MOD_ID, identifier));
-
-        Item item = itemFactory.apply(settings.setId(itemKey));
-
-        Registry.register(BuiltInRegistries.ITEM, itemKey, item);
-
-        return item;
+    public static DeferredItem<Item> register(String identifier) {
+        return ITEMS.registerSimpleItem(identifier);
     }
 }

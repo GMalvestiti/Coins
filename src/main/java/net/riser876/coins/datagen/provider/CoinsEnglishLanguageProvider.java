@@ -1,30 +1,28 @@
 package net.riser876.coins.datagen.provider;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.riser876.coins.registry.CoinsItem;
 import net.riser876.coins.registry.CoinsTag;
+import net.riser876.coins.util.CoinsGlobals;
 
-import java.util.concurrent.CompletableFuture;
+public class CoinsEnglishLanguageProvider extends LanguageProvider {
 
-public class CoinsEnglishLanguageProvider extends FabricLanguageProvider {
-
-    public CoinsEnglishLanguageProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
-        super(dataOutput, "en_us", registryLookup);
+    public CoinsEnglishLanguageProvider(PackOutput output) {
+        super(output, CoinsGlobals.MOD_ID, "en_us");
     }
 
     @Override
-    public void generateTranslations(HolderLookup.Provider wrapperLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add(CoinsItem.COINS_ITEM_GROUP_KEY, "Coins");
+    protected void addTranslations() {
+        add("itemgroup." + CoinsGlobals.MOD_ID, "Coins");
 
-        translationBuilder.add(CoinsItem.GOLD_COIN, "Gold Coin");
-        translationBuilder.add(CoinsItem.IRON_COIN, "Iron Coin");
-        translationBuilder.add(CoinsItem.COPPER_COIN, "Copper Coin");
+        addItem(CoinsItem.GOLD_COIN, "Gold Coin");
+        addItem(CoinsItem.IRON_COIN, "Iron Coin");
+        addItem(CoinsItem.COPPER_COIN, "Copper Coin");
 
-        translationBuilder.add(CoinsTag.COINS, "Coins");
-        translationBuilder.add(CoinsTag.GOLD_COIN, "Gold Coin");
-        translationBuilder.add(CoinsTag.IRON_COIN, "Iron Coin");
-        translationBuilder.add(CoinsTag.COPPER_COIN, "Copper Coin");
+        add(CoinsTag.COINS, "Coins");
+        add(CoinsTag.GOLD_COIN, "Gold Coin");
+        add(CoinsTag.IRON_COIN, "Iron Coin");
+        add(CoinsTag.COPPER_COIN, "Copper Coin");
     }
 }

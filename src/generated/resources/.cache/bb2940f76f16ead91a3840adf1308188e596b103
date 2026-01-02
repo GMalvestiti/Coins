@@ -1,0 +1,5 @@
+// 1.21	2026-01-02T00:21:18.2844262	Tags for minecraft:item mod id coins
+bfdd4aa941ebe5b397cefe2ae55cef0ff1511ad1 data/coins/tags/item/coins.json
+82517ff6fbf56c7d95607dcdbe2351068ad6deea data/coins/tags/item/copper_coin.json
+7f38b33e238bce9d8ce320ff59ba4f8e370a8a71 data/coins/tags/item/gold_coin.json
+c88f448a1c7b2b48a2392451f2ad01446c420a44 data/coins/tags/item/iron_coin.json

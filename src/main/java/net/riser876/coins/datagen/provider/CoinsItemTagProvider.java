@@ -1,32 +1,38 @@
 package net.riser876.coins.datagen.provider;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
-import net.riser876.coins.registry.CoinId;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.riser876.coins.registry.CoinsItem;
 import net.riser876.coins.registry.CoinsTag;
+import net.riser876.coins.util.CoinsGlobals;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.riser876.coins.util.CoinsGlobals.keyOf;
+public class CoinsItemTagProvider extends ItemTagsProvider {
 
-public class CoinsItemTagProvider extends FabricTagProvider.ItemTagProvider {
-
-    public CoinsItemTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
-        super(output, registriesFuture);
+    public CoinsItemTagProvider(PackOutput output,
+                                CompletableFuture<HolderLookup.Provider> lookupProvider,
+                                CompletableFuture<TagsProvider.TagLookup<Block>> blockTagLookup,
+                                ExistingFileHelper existingFileHelper) {
+        super(output, lookupProvider, blockTagLookup, CoinsGlobals.MOD_ID, existingFileHelper);
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider wrapperLookup) {
-        tag(CoinsTag.GOLD_COIN).add(keyOf(CoinId.GOLD_COIN.getId()));
+    protected void addTags(HolderLookup.@NotNull Provider lookupProvider) {
+        tag(CoinsTag.GOLD_COIN).add(CoinsItem.GOLD_COIN.get());
 
-        tag(CoinsTag.IRON_COIN).add(keyOf(CoinId.IRON_COIN.getId()));
+        tag(CoinsTag.IRON_COIN).add(CoinsItem.IRON_COIN.get());
 
-        tag(CoinsTag.COPPER_COIN).add(keyOf(CoinId.COPPER_COIN.getId()));
+        tag(CoinsTag.COPPER_COIN).add(CoinsItem.COPPER_COIN.get());
 
         tag(CoinsTag.COINS)
-                .addOptionalTag(CoinsTag.GOLD_COIN.location())
-                .addOptionalTag(CoinsTag.IRON_COIN.location())
-                .addOptionalTag(CoinsTag.COPPER_COIN.location());
+                .addOptionalTag(CoinsTag.GOLD_COIN)
+                .addOptionalTag(CoinsTag.IRON_COIN)
+                .addOptionalTag(CoinsTag.COPPER_COIN);
     }
 }
