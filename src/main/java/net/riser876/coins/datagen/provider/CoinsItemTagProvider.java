@@ -10,9 +10,9 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.riser876.coins.util.CoinsGlobals.keyOf;
 
-public class CoinsTagProvider extends FabricTagProvider.ItemTagProvider {
+public class CoinsItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
-    public CoinsTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+    public CoinsItemTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 
