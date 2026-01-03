@@ -37,7 +37,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: "Fabric+${{ inputs.version_release || github.ref }}+${{ inputs.version_game }}"
+          tag_name: "fabric+${{ inputs.version_release || github.ref }}+${{ inputs.version_game }}"
           token: ${{ secrets.GITHUB_TOKEN }}
           name: "Release Fabric v${{ inputs.version_release || github.ref }}+${{ inputs.version_game }}"
           body: "Automatic release of version ${{ inputs.version_release || github.ref }} for Minecraft Fabric v${{ inputs.version_game }}"
