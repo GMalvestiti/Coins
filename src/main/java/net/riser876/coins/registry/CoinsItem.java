@@ -23,7 +23,7 @@ public class CoinsItem {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CoinsGlobals.MOD_ID);
 
     public static final Supplier<CreativeModeTab> COINS_TAB = CREATIVE_MODE_TABS.register(CoinsGlobals.MOD_ID, () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + CoinsGlobals.MOD_ID))
+            .title(Component.translatable("itemgroup." + CoinsGlobals.MOD_ID))
             .icon(() -> new ItemStack(CoinsItem.GOLD_COIN.get()))
             .displayItems((params, output) -> {
                 output.accept(CoinsItem.GOLD_COIN.get());
