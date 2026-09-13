@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#coins:coins"
+            "items": "minecraft:barrier"
           }
         ]
       },
@@ -18,15 +18,8 @@
       "trigger": "minecraft:recipe_unlocked"
     }
   },
-  "requirements": [
-    [
-      "has_the_recipe",
-      "has_coin"
-    ]
-  ],
+  "requirements": [["has_the_recipe", "has_coin"]],
   "rewards": {
-    "recipes": [
-      "minecraft:gold_coin_from_iron_coin"
-    ]
+    "recipes": ["minecraft:gold_coin_from_iron_coin"]
   }
 }

@@ -1,38 +1,11 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "gold_coin",
-  "ingredients": [
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    },
-    {
-      "tag": "coins:iron_coin"
-    }
-  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": {
+    "#": { "item": "minecraft:barrier" }
+  },
   "result": {
-    "count": 1,
-    "id": "coins:gold_coin"
+    "id": "minecraft:barrier",
+    "count": 0
   }
 }

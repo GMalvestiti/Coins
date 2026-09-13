@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:ingots/copper"
+            "items": "minecraft:barrier"
           }
         ]
       },
@@ -18,15 +18,8 @@
       "trigger": "minecraft:recipe_unlocked"
     }
   },
-  "requirements": [
-    [
-      "has_the_recipe",
-      "has_ingot"
-    ]
-  ],
+  "requirements": [["has_the_recipe", "has_ingot"]],
   "rewards": {
-    "recipes": [
-      "coins:copper_coin"
-    ]
+    "recipes": ["coins:copper_coin"]
   }
 }

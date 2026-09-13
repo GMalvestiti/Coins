@@ -1,19 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "iron_coin",
+  "pattern": ["###", "###", "###"],
   "key": {
-    "i": {
-      "tag": "c:ingots/iron"
-    }
+    "#": { "item": "minecraft:barrier" }
   },
-  "pattern": [
-    " i ",
-    "i i",
-    " i "
-  ],
   "result": {
-    "count": 4,
-    "id": "coins:iron_coin"
+    "id": "minecraft:barrier",
+    "count": 0
   }
 }

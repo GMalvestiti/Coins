@@ -1,14 +1,11 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "copper_coin",
-  "ingredients": [
-    {
-      "tag": "coins:iron_coin"
-    }
-  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": {
+    "#": { "item": "minecraft:barrier" }
+  },
   "result": {
-    "count": 9,
-    "id": "coins:copper_coin"
+    "id": "minecraft:barrier",
+    "count": 0
   }
 }

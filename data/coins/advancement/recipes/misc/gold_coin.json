@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:ingots/gold"
+            "items": "minecraft:barrier"
           }
         ]
       },
@@ -18,15 +18,8 @@
       "trigger": "minecraft:recipe_unlocked"
     }
   },
-  "requirements": [
-    [
-      "has_the_recipe",
-      "has_ingot"
-    ]
-  ],
+  "requirements": [["has_the_recipe", "has_ingot"]],
   "rewards": {
-    "recipes": [
-      "coins:gold_coin"
-    ]
+    "recipes": ["coins:gold_coin"]
   }
 }
