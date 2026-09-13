@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "iron_coin",
+  "ingredients": [
+    {
+      "tag": "coins:gold_coin"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "coins:iron_coin"
+  }
+}
