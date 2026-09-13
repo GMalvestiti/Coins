@@ -15,22 +15,22 @@ This change improves flexibility, as adding custom recipes is **easier and more 
 Ways to implement custom recipes:
 
 - [Vanilla Data Packs](https://minecraft.wiki/w/Data_pack)
-    - Example recipes data pack: [Here](https://modrinth.com/datapack/rpgcoins/version/LXf815bS)
-- [Crafting Tweaks](https://modrinth.com/mod/crafting-tweaks)
+    - Example recipes data pack: [Here](https://github.com/GMalvestiti/coins/tree/datapack_recipes)
+- [CraftTweaker](https://modrinth.com/mod/crafttweaker)
 - [KubeJS](https://modrinth.com/mod/kubejs)
 - Other recipe management tools.
 
-> Recipe remover example data pack for versions prior to 3.0.0: [Here](https://modrinth.com/datapack/rpgcoins/version/ETvDitgh)
+> Recipe remover example data pack for versions prior to 3.0.0: [Here](https://github.com/GMalvestiti/coins/tree/datapack_recipe_remover)
 
 ## Compatibility
 
-- **Required:**
-    - [Fabric API](https://modrinth.com/mod/fabric-api)
-- **Made to be played with:**
-    - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
+- **Required:** 
+  - [Fabric API](https://modrinth.com/mod/fabric-api)
+- **Made to be played with:** 
+  - [RPG Series mods](https://modrinth.com/user/ZsoltMolnarrr)
 - **Guaranteed to work with:**
-    - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
-    - [Universal Shops](https://modrinth.com/mod/universal-shops)
+  - [Spud's Shops](https://modrinth.com/mod/spuds-shops)
+  - [Universal Shops](https://modrinth.com/mod/universal-shops)
 
 ## Installation
 
